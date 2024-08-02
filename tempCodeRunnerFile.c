@@ -1,2 +1,1 @@
-    void *ptr=&a;
-  printf("hello world %d\n", *ptr);
+    // printf("max_ele debug2 %d \n", max);

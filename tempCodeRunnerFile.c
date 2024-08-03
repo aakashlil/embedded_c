@@ -1,1 +1,2 @@
-    // printf("max_ele debug2 %d \n", max);
+
+    arr_display(arr1,5);

@@ -8,9 +8,9 @@ printf(" %f ",arr[i]);
 
 float *arr_i(int size){
 
-float *myarray=(float*)malloc(size*sizeof(float));
+float *myarray=(float*)calloc(size,sizeof(float));
 if(!myarray){
-    printf("insuffiecient memory")
+    printf("insuffiecient memory");
     exit(1);
 }
 for(int i=0; i<size; i++){
@@ -22,7 +22,8 @@ return myarray;
 int main()
 {
 float *myarry=arr_i(6);
-arr_display(myarry,6);
 free(myarry);
+myarry=NULL;
+arr_display(myarry,6);
 return 0;
 }

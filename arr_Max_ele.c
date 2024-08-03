@@ -9,7 +9,7 @@ for(int i=1; i<size; i++){
     // printf("max_ele debug1 %d \n", ptr[i]);
     if(max<ptr[i]){
     max=ptr[i];
-    // printf("max_ele debug2 %d \n", max);
+    // printf("max_ele dqebug2 %d \n", max);
 }
 }
 return max;

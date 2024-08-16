@@ -1,29 +1,12 @@
-#include<stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+int main() {
+    // Use static allocation for an array of floats
+    float values[2] = {2.0, 3.0}, *a;
 
-void arr_display(float arr[],  int size){
-for(int i=0; i<size; i++)
-printf(" %f ",arr[i]);
-}
-
-float *arr_i(int size){
-
-float *myarray=(float*)calloc(size,sizeof(float));
-if(!myarray){
-    printf("insuffiecient memory");
-    exit(1);
-}
-for(int i=0; i<size; i++){
-printf("enter ele %d:",i+1);
-scanf("%f",&myarray[i]);}
-return myarray;
-}
-
-int main()
-{
-float *myarry=arr_i(6);
-free(myarry);
-myarry=NULL;
-arr_display(myarry,6);
-return 0;
+    // Print the values to verify
+    printf("myarry[0] = %f\n", values[0]);
+    printf("myarry[1] = %f\n", values[1]);
+    free(a);
+    return 0;
 }

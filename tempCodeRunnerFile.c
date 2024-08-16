@@ -1,2 +1,1 @@
-
-        arry[*size]=num;
+s
